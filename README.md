@@ -1,8 +1,7 @@
 # QR Payments System ( QR-SCANNER )
 
-This section of the project "QR PAYMENTS SYSTEM" is a QR Scanner which scans a QR Code and performs the transaction to complete user's food orders.
+This section of the project "QR Payments System" is a QR Scanner which scans a QR Code and performs the transaction to complete user's food orders.
 This project is a part of our Semester-End Course Based Project.
-
 
 ### What's happening at the back?
 
@@ -18,9 +17,12 @@ This project is a part of our Semester-End Course Based Project.
 9. Else the customer is not the first customer of the day so update credit amount for that stall name and that particular date.
 10. So here stall name and date together are primary key (composite primary key).
 
-### Tech Stack Used
-
-
+## Tech Stack Used
+   ### Relational Database
+      1. MySQL Database Management System.
+      
+   ### QR Scanner
+      1. pyzbar (python module)
 
 ### Use .env file to store your db credentials
 ### folder structure for .env file
@@ -39,6 +41,4 @@ This project is a part of our Semester-End Course Based Project.
     MY_PASSWORD = your_db_password_here
     MYDB = your_local_database_name_here
 
-*(dont enclose credentials in quotes)
-
-
+*(dont enclose credentials in quotes, and add .env file to .gitignore)
