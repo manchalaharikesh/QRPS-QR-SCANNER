@@ -23,6 +23,8 @@ This project is a part of our Semester-End Course Based Project.
       
    ### QR Scanner
       1. pyzbar (python module)
+      2. opencv-python
+      3. mysql-connector-python
 
 ### Use .env file to store your db credentials
 ### folder structure for .env file
