@@ -3,7 +3,7 @@
 This section of the project "QR Payments System" is a QR Scanner which scans a QR Code and performs the transaction to complete user's food orders.
 This project is a part of our Semester-End Course Based Project.
 
-### What's happening at the back?
+## What's happening at the back?
 
 1. Verify qr in qr records.
 2. Found send invalid qr page.
@@ -43,4 +43,4 @@ This project is a part of our Semester-End Course Based Project.
     MY_PASSWORD = your_db_password_here
     MYDB = your_local_database_name_here
 
-*(dont enclose credentials in quotes, and add .env file to .gitignore)
+***(dont enclose credentials in quotes, and add .env file to .gitignore)***
