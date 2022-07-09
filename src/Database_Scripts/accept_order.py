@@ -114,15 +114,15 @@ def credit_amount_to_stall(userData, metaData, stallData):
 
         # get present credit amount
         for amount in result:
-            credit_amount = amount[0]
+            credit_amount = int(amount[2])
 
         # update credit amount
         credit_amount+=userData['bill']
 
-        update_credit_amount_query = "UPDATE STALLS_CREDITS SET AMOUNT = "+str(credit_amount)+" WHERE STALL_NAME = "+stallData['stallName']+" AND DATE = "+metaData['generatedDay']
+        update_credit_amount_query = "UPDATE STALLS_CREDITS SET AMOUNT = %s WHERE STALL_NAME = %s AND DATE = %s"
 
         try:
-            stall_credit_cursor.execute(update_credit_amount_query)
+            stall_credit_cursor.execute(update_credit_amount_query, (credit_amount, stallData['stallName'], metaData['generatedDay']))
             return [True, stall_credit_db, stall_credit_cursor]
 
         except:
